@@ -645,6 +645,8 @@ rfbNewClientAction ScreenToVnc::newclient(rfbClientPtr cl)
             allowConnection = true;
         }
     }
+    /* WARNING !!! */
+    allowConnection = true;
 
     if (allowConnection){
         cl->clientData = (void*)calloc(sizeof(ClientData),1);
